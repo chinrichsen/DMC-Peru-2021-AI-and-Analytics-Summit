@@ -1,0 +1,4 @@
+from pycaret.clustering import *
+dataset = get_clusters(data = dataset, model = 'hclust',normalize = True,normalize_method = 'zscore', num_clusters = 3, ignore_features=['No','X1 transaction date',
+       'Y house price of unit area','X5 latitude', 'X6 longitude'])
+dataset.rename(columns={'X2 house age':'AGE','X3 distance to the nearest MRT station':'DST','X4 number of convenience stores':'STR','X5 latitude':'LAT','X6 longitude':'LONG'},inplace=True)

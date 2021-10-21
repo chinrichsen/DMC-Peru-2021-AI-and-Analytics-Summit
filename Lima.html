@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_0053ed18c4524f5aa136a2d9de157a1d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_0053ed18c4524f5aa136a2d9de157a1d" ></div>
+        
+</body>
+<script>    
+    
+            var map_0053ed18c4524f5aa136a2d9de157a1d = L.map(
+                "map_0053ed18c4524f5aa136a2d9de157a1d",
+                {
+                    center: [-12.043525500111025, -77.0426839145816],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 14,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_0053ed18c4524f5aa136a2d9de157a1d);
+
+            
+
+        
+    
+            var tile_layer_90d785e11820417cb44299089fb5fbe6 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_0053ed18c4524f5aa136a2d9de157a1d);
+        
+    
+            var marker_6766b7491b574a85baf0510565460c7f = L.marker(
+                [-12.061212887253255, -77.03770721473714],
+                {}
+            ).addTo(map_0053ed18c4524f5aa136a2d9de157a1d);
+        
+    
+            var icon_e75ef9f191814a2399c834b7678e45c2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_6766b7491b574a85baf0510565460c7f.setIcon(icon_e75ef9f191814a2399c834b7678e45c2);
+        
+    
+        var popup_d4a8e2bca13c4f56975ed5c0d9bb232b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c62a4e4bbc5446c093725fb1497a3b9b = $(`<div id="html_c62a4e4bbc5446c093725fb1497a3b9b" style="width: 100.0%; height: 100.0%;"><a href="https://mali.pe/" target="_blank">"Museo de Arte de Lima"</a></div>`)[0];
+            popup_d4a8e2bca13c4f56975ed5c0d9bb232b.setContent(html_c62a4e4bbc5446c093725fb1497a3b9b);
+        
+
+        marker_6766b7491b574a85baf0510565460c7f.bindPopup(popup_d4a8e2bca13c4f56975ed5c0d9bb232b)
+        ;
+
+        
+    
+    
+            marker_6766b7491b574a85baf0510565460c7f.bindTooltip(
+                `<div>
+                     Museo de Arte de Lima
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1756f76f968c42e6a432b06bf4a2cdfd = L.marker(
+                [-12.04637455397618, -77.02666136874092],
+                {}
+            ).addTo(map_0053ed18c4524f5aa136a2d9de157a1d);
+        
+    
+            var icon_19444a3560ff45fc9b39a6920f7c2b34 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_1756f76f968c42e6a432b06bf4a2cdfd.setIcon(icon_19444a3560ff45fc9b39a6920f7c2b34);
+        
+    
+        var popup_56de2baf82314cf59332293b49822a69 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4f3284cea87349a58b8de75abb8cc4dd = $(`<div id="html_4f3284cea87349a58b8de75abb8cc4dd" style="width: 100.0%; height: 100.0%;"><a href="http://museocatacumbas.com/" target="_blank">"Basilica San Francisco de Lima"</a></div>`)[0];
+            popup_56de2baf82314cf59332293b49822a69.setContent(html_4f3284cea87349a58b8de75abb8cc4dd);
+        
+
+        marker_1756f76f968c42e6a432b06bf4a2cdfd.bindPopup(popup_56de2baf82314cf59332293b49822a69)
+        ;
+
+        
+    
+    
+            marker_1756f76f968c42e6a432b06bf4a2cdfd.bindTooltip(
+                `<div>
+                     Basilica San Francisco de Lima
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
